@@ -1,0 +1,89 @@
+body{
+    display: grid;
+    grid-template-areas: "header header"
+                         "about about "
+                         "footer footer";
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'Poppins', sans-serif;
+    content: '';
+    background: url(../images/bg-desktop.svg) no-repeat center center;
+    background-size: cover;
+    background-color: var(--primary);
+}
+
+.header{
+    grid-area: header;
+}
+
+.header .logo{
+    width: 220px;
+    height: 175px;
+    margin: 0 70px;
+}
+
+.about{
+    grid-area: about;
+    color: #fff;
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    gap: 40px;
+}
+
+.about .image{
+    max-width: 600px;
+}
+
+.about .info{
+   margin: 35px;
+}
+
+.about .info .title{
+    max-width: 390px;
+    font-size: 32px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.about .info .text{
+    font-family: 'Open Sans', sans-serif;
+    max-width: 380px;
+    padding-bottom: 35px;
+    font-size: 13px;
+}
+
+.about .info .btn{
+    background-color: #fff;
+    color: var(--primary);
+    padding: 10px 50px;
+    border-radius: 30px;
+}
+
+.about .info .btn:hover{
+    color: #fff;
+    background-color: var(--soft);
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 50px;
+}
+
+.footer .icon{
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-right: 15px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .icon:hover{
+    color: var(--soft);
+    border-color: var(--soft);
+}
